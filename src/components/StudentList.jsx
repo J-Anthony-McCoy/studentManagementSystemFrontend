@@ -9,7 +9,7 @@ export const StudentList = () => {
   const getStudents = () => {
     axios.get("http://localhost:8080/students").then((response) => {
       console.log(response);
-      setPrintStudents(response.data.map);
+      setPrintStudents(response.data);
     });
   };
 
@@ -27,7 +27,6 @@ export const StudentList = () => {
         </ListGroupItem>
       </ListGroup>
       <button onClick={getStudents}>Get Students</button>
-      {printStudents}
     </div>
   );
 };
