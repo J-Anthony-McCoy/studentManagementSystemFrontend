@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import { ListGroup, ListGroupItem, Button } from "reactstrap";
+
+import { DeleteStudent } from "../components/DeleteStudent";
 
 export const StudentList = () => {
   const [students, setStudents] = useState([]);
@@ -30,16 +30,6 @@ export const StudentList = () => {
           </p>
         ))}
       </div>
-      <ListGroup className="mt-4">
-        <ListGroupItem className="d-flex">
-          <div className="m1-auto">
-            <Link className="btn btn-warning mr-5" to="update/1">
-              Update
-            </Link>
-            <Button color="danger">Delete</Button>
-          </div>
-        </ListGroupItem>
-      </ListGroup>
       <button onClick={getStudents}>Get Students</button>
     </div>
   );

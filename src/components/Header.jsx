@@ -14,6 +14,11 @@ export const Header = () => {
                 Create Student
               </Link>
             </NavItem>
+            <NavItem>
+              <Link className="btn btn-primary ml-1" to="/delete">
+                Delete Student
+              </Link>
+            </NavItem>
           </Nav>
         </Container>
       </Navbar>
