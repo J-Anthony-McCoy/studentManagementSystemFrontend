@@ -4,10 +4,10 @@ import { StudentList } from "../components/StudentList";
 
 export const Home = () => {
   return (
-    <>
+    <div>
       <Header />
       <StudentList />
-    </>
+    </div>
   );
 };
 
