@@ -1,28 +1,3 @@
-// import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-// import { ListGroup, ListGroupItem, Button } from "reactstrap";
-
-// export const DeleteStudent = () => {
-//   const [id, setId] = useState(0);
-//   const updStudent = (id) => {
-//     console.log(id);
-//   };
-//   return (
-//     <div>
-//       <ListGroup>
-//         <ListGroupItem>
-//           <div>
-//             <Link className="btn btn-warning" onClick={() => updStudent(setId)}>
-//               Update
-//             </Link>
-//             <Button color="danger">Delete</Button>
-//           </div>
-//         </ListGroupItem>
-//       </ListGroup>
-//     </div>
-//   );
-// };
-
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";

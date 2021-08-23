@@ -15,8 +15,13 @@ export const Header = () => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="btn btn-primary ml-1" to="/delete">
+              <Link className="btn btn-primary" to="/delete">
                 Delete Student
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="btn btn-primary" to="/update">
+                Update Student
               </Link>
             </NavItem>
           </Nav>
