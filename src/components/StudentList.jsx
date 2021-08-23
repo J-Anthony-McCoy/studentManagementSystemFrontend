@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import { DeleteStudent } from "../components/DeleteStudent";
-
 export const StudentList = () => {
   const [students, setStudents] = useState([]);
 
@@ -18,12 +16,14 @@ export const StudentList = () => {
       <div>
         <h1>All Students</h1>
         <h3>
+          <span className="p3">ID</span>
           <span className="p3">First Name</span>
           <span className="p4">Last Name</span>
           <span className="p5">Grade</span>
         </h3>
         {students.map((s) => (
           <p key={s.id}>
+            <span className="p1">{s.id}</span>
             <span className="p1">{s.firstName}</span>
             <span>{s.lastName}</span>
             <span className="p2">{s.grade}</span>
