@@ -12,3 +12,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.p1 {
+  padding-right: 175px;
+}
+
+.p2 {
+  padding-left: 175px;
+}
+
+.p3 {
+  padding-right: 135px;
+}
+
+.p4 {
+  /* padding-left: 125px; */
+}
+
+.p5 {
+  padding-left: 100px;
+}
